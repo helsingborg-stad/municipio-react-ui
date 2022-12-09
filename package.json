@@ -1,0 +1,7 @@
+{
+  "name": "react-component-lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Nikolas Ramstedt <nikolas.ramstedt@helsingborg.se>",
+  "license": "MIT"
+}
