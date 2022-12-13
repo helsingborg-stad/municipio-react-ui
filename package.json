@@ -1,5 +1,5 @@
 {
-  "name": "municipio-react-ui",
+  "name": "@helsingborg-stad/municipio-react-ui",
   "repository": "helsingborg-stad/municipio-react-ui",
   "version": "0.1.0",
   "main": "index.js",
