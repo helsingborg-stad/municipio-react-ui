@@ -114,5 +114,8 @@
     "webpack-config-utils": "^2.3.1",
     "webpack-dev-server": "^4.11.1"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
