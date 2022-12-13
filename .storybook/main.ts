@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import createWebpackConfig from '../webpack.config'
-
-const webpackConfig = createWebpackConfig({})
+import webpackConfig from '../webpack.config'
 
 export const core = {
   builder: 'webpack5',
@@ -14,29 +12,13 @@ export default {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/addon-a11y',
+    '@storybook/preset-scss',
   ],
   framework: '@storybook/react',
   core,
-  typescript: { reactDocgen: 'react-docgen' },
-  webpackFinal: async (config: any) => {
-    const excludedPlugins = [
-      'HtmlWebpackPlugin',
-      'MiniCssExtractPlugin',
-      'ReactRefreshWebpackPlugin',
-    ]
-
-    return {
-      ...config,
-      module: {
-        ...config.module,
-        rules: webpackConfig?.module?.rules,
-      },
-      plugins: [
-        ...config.plugins,
-        ...(webpackConfig?.plugins ?? []).filter(
-          ({ constructor: { name } }) => !excludedPlugins.includes(name),
-        ),
-      ],
-    }
-  },
+  typescript: { reactDocgen: 'react-docgen-typescript' },
+  webpackFinal: async (config: any) => ({
+    ...config,
+    plugins: [...config.plugins, ...(webpackConfig?.plugins ?? [])],
+  }),
 }
