@@ -17,9 +17,9 @@
     "webpack:test": "webpack configtest",
     "webpack:info": "webpack info",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s dist",
     "test-storybook": "test-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "gh-pages -d dist"
   },
   "homepage": "http://helsingborg-stad.github.io/municipio-react-ui",
   "browserslist": [
