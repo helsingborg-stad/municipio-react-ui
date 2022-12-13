@@ -22,7 +22,7 @@ Text.args = {
   name: 'text-field',
   label: 'Text Field',
   type: 'text',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
 }
 
@@ -32,7 +32,7 @@ Number.args = {
   label: 'Number Field',
   type: 'number',
   placeholder: '',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
 }
 
@@ -42,7 +42,7 @@ Email.args = {
   label: 'Email Field',
   placeholder: 'mail@placeholder.com',
   type: 'email',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
 }
 
@@ -52,7 +52,7 @@ Phone.args = {
   label: 'Phone Field',
   placeholder: '+46733221122',
   type: 'phone',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
 }
 
@@ -62,7 +62,7 @@ Password.args = {
   label: 'Password Field',
   placeholder: '',
   type: 'password',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
 }
 
@@ -72,6 +72,7 @@ Search.args = {
   label: 'Search Field',
   placeholder: 'Enter search',
   type: 'search',
-  helperText: '',
+  helperText: 'This is a helper text',
   value: '',
+  readOnly: true,
 }
