@@ -17,7 +17,6 @@ const { ifProduction } = getIfUtils(process.env.NODE_ENV ?? 'production')
 
 const config = (env: Record<string, any>): WebpackConfiguration => {
   return {
-    entry: { main: './src/index.tsx' },
     module: {
       rules: [
         {
@@ -108,23 +107,7 @@ const config = (env: Record<string, any>): WebpackConfiguration => {
         configFile: '.stylelintrc',
         context: 'src',
       }),
-      new HtmlWebpackPlugin({
-        template: './src/template.html.ejs',
-      }),
-      new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css',
-      }),
-      ...(env?.WEBPACK_SERVE ? [new ReactRefreshWebpackPlugin()] : []),
     ],
-    resolve: {
-      extensions: ['.tsx', '.ts', '.js', '.json', '.mdx', '.ejs'],
-    },
-    devtool: ifProduction(false, 'inline-source-map'),
-    output: {
-      filename: ifProduction('[name].[contenthash].js', '[name].js'),
-      path: path.resolve(__dirname, 'dist'),
-      clean: env?.WEBPACK_SERVE ? false : true,
-    },
   }
 }
 
