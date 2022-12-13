@@ -5,7 +5,7 @@ import React, {
   HTMLInputTypeAttribute,
 } from 'react'
 
-interface Props {
+export interface FieldProps {
   value: string
   name: string
   label?: string
@@ -41,7 +41,7 @@ const Field = ({
   placeholder = '',
   inputProps = {},
   ...props
-}: Props): JSX.Element => {
+}: FieldProps): JSX.Element => {
   const classNames = [
     'c-field',
     ...(error ? ['is-invalid'] : []),

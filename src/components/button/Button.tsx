@@ -6,7 +6,7 @@ interface Props
     HTMLButtonElement
   > {
   color?: 'default' | 'primary' | 'secondary'
-  variant?: 'filled' | 'basic' | 'outline'
+  variant?: 'filled' | 'basic' | 'outlined'
   size?: 'sm' | 'md' | 'lg'
   disabled?: boolean
 }
@@ -20,7 +20,7 @@ const propsToClassNamesMap = {
   variant: {
     filled: 'c-button__filled',
     basic: 'c-button__basic',
-    outline: 'c-button__outline',
+    outlined: 'c-button__outlined',
   },
   color: {
     primary: '--primary',
