@@ -6,8 +6,8 @@ import React, {
 } from 'react'
 
 export interface FieldProps {
-  value: string
   name: string
+  value?: string
   label?: string
   onChange: ChangeEventHandler<HTMLInputElement>
   onBlur?: FocusEventHandler<HTMLInputElement>
@@ -62,6 +62,7 @@ const Field = ({
           aria-label={label}
           aria-required={required ? 'true' : 'false'}
           {...inputProps}
+          {...(value ? { value } : {})}
           {...(readOnly ? { readOnly } : {})}
           {...(placeholder ? { placeholder } : {})}
           {...(type ? { type } : {})}
@@ -70,7 +71,6 @@ const Field = ({
           {...(onFocus ? { onFocus } : {})}
           onChange={onChange}
           name={name}
-          value={value}
         />
       </div>
       {helperText ? <div className='c-field__helper'>{helperText}</div> : null}
