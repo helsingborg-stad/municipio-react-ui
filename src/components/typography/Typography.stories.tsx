@@ -7,7 +7,7 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Typography>
 
-export const Headings: ComponentStory<typeof Typography> = (args) => (
+export const Headings: ComponentStory<typeof Typography> = () => (
   <>
     <Typography variant='h1'>Heading 1</Typography>
     <Typography variant='h2'>Heading 2</Typography>
@@ -18,7 +18,7 @@ export const Headings: ComponentStory<typeof Typography> = (args) => (
   </>
 )
 
-export const Paragraph: ComponentStory<typeof Typography> = (args) => (
+export const Paragraph: ComponentStory<typeof Typography> = () => (
   <>
     <Typography variant='p'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -41,7 +41,7 @@ export const Paragraph: ComponentStory<typeof Typography> = (args) => (
   </>
 )
 
-export const Meta: ComponentStory<typeof Typography> = (args) => (
+export const Meta: ComponentStory<typeof Typography> = () => (
   <>
     <Typography variant='meta'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -49,7 +49,7 @@ export const Meta: ComponentStory<typeof Typography> = (args) => (
   </>
 )
 
-export const Caption: ComponentStory<typeof Typography> = (args) => (
+export const Caption: ComponentStory<typeof Typography> = () => (
   <>
     <Typography variant='caption'>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

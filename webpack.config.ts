@@ -1,13 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import path from 'path'
 import 'webpack-dev-server'
 import * as dotenv from 'dotenv'
 import { Configuration as WebpackConfiguration } from 'webpack'
 import ESLintPlugin from 'eslint-webpack-plugin'
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin'
 import StylelintPlugin from 'stylelint-webpack-plugin'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
-import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 import postcssPresetEnv from 'postcss-preset-env'
 import { getIfUtils } from 'webpack-config-utils'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'

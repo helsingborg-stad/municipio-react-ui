@@ -8,7 +8,7 @@ export default {
   argTypes: {},
 } as ComponentMeta<typeof Icon>
 
-export const MaterialIcons: ComponentStory<typeof Icon> = (args) => (
+export const MaterialIcons: ComponentStory<typeof Icon> = () => (
   <>
     <Icon name='email' />
     <Icon name='phone' />
@@ -18,7 +18,7 @@ export const MaterialIcons: ComponentStory<typeof Icon> = (args) => (
   </>
 )
 
-export const Sizes: ComponentStory<typeof Icon> = (args) => (
+export const Sizes: ComponentStory<typeof Icon> = () => (
   <>
     <Icon size='sm' name='diamond' />
     <Icon size='md' name='diamond' />
