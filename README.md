@@ -66,7 +66,7 @@ const App = () => (
 
 ---
 
-- [Storybook (TODO)](#)
+- [Storybook](https://helsingborg-stad.github.io/municipio-react-ui)
 - [Styleguide](http://v2.styleguide.helsingborg.se/)
 - [Icons](http://v2.styleguide.helsingborg.se/icons)
 
@@ -83,7 +83,7 @@ yarn
 yarn start
 ```
 
-Open your browser and visit <http://localhost:8001>.
+Open your browser and visit <http://localhost:6006>.
 
 #### **Lint code**
 
