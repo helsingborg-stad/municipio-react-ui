@@ -9,7 +9,6 @@ export default {
 
 const FieldTemplate: ComponentStory<typeof Field> = (args) => (
   <Field
-    onChange={() => ''}
     placeholder='Placeholder'
     helperText={'This is a helper text'}
     {...args}
@@ -22,6 +21,9 @@ Text.args = {
   label: 'Text Field',
   type: 'text',
   helperText: 'This is a helper text',
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }
 
 export const Number = FieldTemplate.bind({})
@@ -31,6 +33,9 @@ Number.args = {
   type: 'number',
   placeholder: '',
   helperText: 'This is a helper text',
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }
 
 export const Email = FieldTemplate.bind({})
@@ -40,6 +45,9 @@ Email.args = {
   placeholder: 'mail@placeholder.com',
   type: 'email',
   helperText: 'This is a helper text',
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }
 
 export const Phone = FieldTemplate.bind({})
@@ -49,6 +57,9 @@ Phone.args = {
   placeholder: '+46733221122',
   type: 'phone',
   helperText: 'This is a helper text',
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }
 
 export const Password = FieldTemplate.bind({})
@@ -58,6 +69,9 @@ Password.args = {
   placeholder: '',
   type: 'password',
   helperText: 'This is a helper text',
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }
 
 export const Search = FieldTemplate.bind({})
@@ -67,6 +81,7 @@ Search.args = {
   placeholder: 'Enter search',
   type: 'search',
   helperText: 'This is a helper text',
-
-  readOnly: true,
+  onChange: () => '',
+  onBlur: () => '',
+  onFocus: () => '',
 }

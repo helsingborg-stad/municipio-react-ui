@@ -35,7 +35,7 @@ const VariantToElementMap: Record<TypographyVariants, TypographyElements> = {
   meta: 'span',
 }
 
-interface Props
+export interface TypographyProps
   extends React.DetailedHTMLProps<
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
@@ -50,7 +50,7 @@ const Typography = ({
   variant = 'p',
   className,
   ...props
-}: Props): JSX.Element => {
+}: TypographyProps): JSX.Element => {
   const Element = element ?? VariantToElementMap[variant]
 
   return (
