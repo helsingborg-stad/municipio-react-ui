@@ -4,10 +4,7 @@ import React from 'react'
 const Card = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='c-card'>
     {children}
   </div>
@@ -16,10 +13,7 @@ const Card = ({
 const CardBody = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='c-card__body'>
     {children}
   </div>

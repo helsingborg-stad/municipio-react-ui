@@ -4,10 +4,7 @@ const Collection = ({
   children,
   className,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div
     {...props}
     className={['c-collection', ...(className ? [className] : [])].join(' ')}
@@ -46,10 +43,7 @@ const CollectionContent = ({
   children,
   className,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div
     {...props}
     className={[
@@ -65,10 +59,7 @@ const CollectionIcon = ({
   children,
   className,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div
     {...props}
     className={['c-collection__icon', ...(className ? [className] : [])].join(
@@ -83,10 +74,7 @@ const CollectionSecondary = ({
   children,
   className,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div
     {...props}
     className={[

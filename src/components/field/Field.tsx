@@ -19,10 +19,7 @@ export interface FieldProps {
   readOnly?: boolean
   required?: boolean
   placeholder?: string
-  inputProps?: React.DetailedHTMLProps<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  >
+  inputProps?: React.ComponentPropsWithoutRef<'input'>
 }
 
 const Field = ({

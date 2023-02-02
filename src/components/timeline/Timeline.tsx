@@ -5,10 +5,7 @@ import { Typography, TypographyProps } from '../typography/Typography'
 const Timeline = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='timeline'>
     {children}
   </div>
@@ -17,10 +14,7 @@ const Timeline = ({
 const TimelineBody = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='timeline__body'>
     {children}
   </div>
@@ -29,10 +23,7 @@ const TimelineBody = ({
 const TimelineHeader = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='timeline__header'>
     {children}
   </div>
@@ -41,10 +32,7 @@ const TimelineHeader = ({
 const TimelineSecondary = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='timeline__secondary'>
     {children}
   </div>
@@ -70,17 +58,14 @@ const TimelineDot = (): JSX.Element => (
 const TimelineConnector = ({
   children,
   ...props
-}: React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
   <div {...props} className='timeline__connector'>
     {children || <TimelineDot />}
     <TimelineLine />
   </div>
 )
 
-interface TimelineItemProps extends React.HTMLAttributes<HTMLDivElement> {
+interface TimelineItemProps extends React.ComponentPropsWithoutRef<'div'> {
   active?: boolean
   muted?: boolean
 }

@@ -19,34 +19,38 @@ const propsToClassNamesMap = {
   disabled: 'is-disabled',
 }
 
-interface CommonProps {
+export type CommonButtonProps = {
   color?: 'default' | 'primary' | 'secondary'
   variant?: 'filled' | 'basic' | 'outlined'
   size?: 'sm' | 'md' | 'lg'
+  as?: string
   disabled?: boolean
-  href?: string
 }
 
-type ButtonAsButton = CommonProps &
-  Omit<React.ComponentPropsWithoutRef<'button'>, keyof CommonProps> & {
+export type ButtonAsButton = CommonButtonProps &
+  React.ComponentPropsWithoutRef<'button'> & {
     as?: 'button'
+    href?: undefined
   }
-
-type ButtonAsAnchor = CommonProps &
-  Omit<React.ComponentPropsWithoutRef<'a'>, keyof CommonProps> & {
+export type ButtonAsAnchor = CommonButtonProps &
+  React.ComponentPropsWithoutRef<'a'> & {
     as?: 'anchor'
+    href?: string
   }
 
-type ButtonProps = ButtonAsButton | ButtonAsAnchor
+export type ButtonProps = ButtonAsButton | ButtonAsAnchor
 
-const Button = ({
+const Button: {
+  (props: ButtonAsButton): JSX.Element
+  (props: ButtonAsAnchor): JSX.Element
+} = ({
   className,
   children,
   color = 'default',
   size = 'md',
   variant = 'filled',
   ...props
-}: ButtonProps): JSX.Element => {
+}: ButtonProps) => {
   const addClassNames = (baseClass: string, ...overrides: string[]): string =>
     [
       baseClass,
@@ -57,7 +61,7 @@ const Button = ({
       ...overrides,
     ].join(' ')
 
-  if (props?.as === 'anchor') {
+  if (props?.as === 'anchor' || props?.href) {
     return (
       <a className={addClassNames('c-button')} {...props}>
         <span className='c-button__label'>
@@ -71,10 +75,11 @@ const Button = ({
     <button
       className={addClassNames('c-button')}
       onClick={(e) => {
+        const { onClick } = props as ButtonAsButton
         e.preventDefault()
-        return props.onClick ? props.onClick(e) : null
+        return onClick ? onClick(e) : null
       }}
-      {...props}
+      {...(props as ButtonAsButton)}
     >
       <span className='c-button__label'>
         <span className='c-button__label-text'>{children}</span>
