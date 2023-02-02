@@ -109,6 +109,12 @@ yarn test
 
 You can submit any ideas as pull requests or as GitHub issues.
 
+## 📝 Changelog
+
+---
+
+The [CHANGELOG.md](CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
+
 ## 🔗 Links
 
 ---
