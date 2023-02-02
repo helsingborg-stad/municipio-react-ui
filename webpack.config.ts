@@ -27,7 +27,7 @@ const config: WebpackConfiguration = {
       logger: 'webpack-infrastructure',
     }),
     new StylelintPlugin({
-      configFile: '.stylelintrc',
+      configFile: '.stylelintrc.js',
       context: 'src',
     }),
   ],
