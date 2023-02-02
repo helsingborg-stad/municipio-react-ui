@@ -8,8 +8,6 @@ Library of accessible & reusable [React](https://reactjs.org/) UI components for
 
 ## 📦 Installation
 
----
-
     # using npm
     npm install @helsingborg-stad/municipio-react-ui
 
@@ -17,8 +15,6 @@ Library of accessible & reusable [React](https://reactjs.org/) UI components for
     yarn add @helsingborg-stad/municipio-react-ui
 
 ## 🎨 Styleguide
-
----
 
 Include the latest [styleguide](https://github.com/helsingborg-stad/styleguide) and fonts in your app:
 
@@ -49,8 +45,6 @@ Stylesheet can also be built & imported as a ES6 module but it requires your bui
 
 ## 🔧 Usage
 
----
-
 ```typescript
 import { Button, Icon } from '@helsingborg-stad/municipio-react-ui'
 
@@ -64,15 +58,11 @@ const App = () => (
 
 ## 📚 Documentation
 
----
-
 - [Storybook](https://helsingborg-stad.github.io/municipio-react-ui)
 - [Styleguide](http://v2.styleguide.helsingborg.se/)
 - [Icons](http://v2.styleguide.helsingborg.se/icons)
 
 ## 🛠 Development
-
----
 
 #### **Clone & run locally**
 
@@ -105,19 +95,13 @@ yarn test
 
 ## 🤝 Contributing
 
----
-
 You can submit any ideas as pull requests or as GitHub issues.
 
 ## 📝 Changelog
 
----
-
 The [CHANGELOG.md](CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
 
 ## 🔗 Links
-
----
 
 - [helsingborg-stad/styleguide](https://github.com/helsingborg-stad/styleguide)
 - [helsingborg-stad/Municipio](https://github.com/helsingborg-stad/Municipio)
@@ -125,7 +109,5 @@ The [CHANGELOG.md](CHANGELOG.md) is regularly updated to reflect what's changed 
 - [helsingborg-stad/modularity](https://github.com/helsingborg-stad/modularity)
 
 ## License
-
----
 
 [MIT](LICENSE.md)
