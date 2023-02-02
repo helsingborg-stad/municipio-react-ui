@@ -49,3 +49,13 @@ Disabled.args = {
   disabled: true,
   size: 'md',
 }
+
+export const AsHTMLAnchorElement = Template.bind({})
+AsHTMLAnchorElement.args = {
+  color: 'primary',
+  variant: 'basic',
+  children: 'Basic',
+  size: 'md',
+  as: 'anchor',
+  href: '#',
+}

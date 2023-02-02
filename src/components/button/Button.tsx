@@ -1,16 +1,5 @@
 import React from 'react'
 
-interface Props
-  extends React.DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
-  color?: 'default' | 'primary' | 'secondary'
-  variant?: 'filled' | 'basic' | 'outlined'
-  size?: 'sm' | 'md' | 'lg'
-  disabled?: boolean
-}
-
 const propsToClassNamesMap = {
   size: {
     sm: 'c-button--sm',
@@ -30,33 +19,68 @@ const propsToClassNamesMap = {
   disabled: 'is-disabled',
 }
 
+interface CommonProps {
+  color?: 'default' | 'primary' | 'secondary'
+  variant?: 'filled' | 'basic' | 'outlined'
+  size?: 'sm' | 'md' | 'lg'
+  disabled?: boolean
+  href?: string
+}
+
+type ButtonAsButton = CommonProps &
+  Omit<React.ComponentPropsWithoutRef<'button'>, keyof CommonProps> & {
+    as?: 'button'
+  }
+
+type ButtonAsAnchor = CommonProps &
+  Omit<React.ComponentPropsWithoutRef<'a'>, keyof CommonProps> & {
+    as?: 'anchor'
+  }
+
+type ButtonProps = ButtonAsButton | ButtonAsAnchor
+
 const Button = ({
   className,
   children,
-  onClick,
   color = 'default',
   size = 'md',
   variant = 'filled',
   ...props
-}: Props): JSX.Element => (
-  <button
-    className={[
-      'c-button',
+}: ButtonProps): JSX.Element => {
+  const addClassNames = (baseClass: string, ...overrides: string[]): string =>
+    [
+      baseClass,
       propsToClassNamesMap.size[size],
       propsToClassNamesMap.variant[variant],
       propsToClassNamesMap.variant[variant] + propsToClassNamesMap.color[color],
       ...(className ? [className] : []),
-    ].join(' ')}
-    onClick={(e) => {
-      e.preventDefault()
-      return onClick ? onClick(e) : null
-    }}
-    {...props}
-  >
-    <span className='c-button__label'>
-      <span className='c-button__label-text'>{children}</span>
-    </span>
-  </button>
-)
+      ...overrides,
+    ].join(' ')
+
+  if (props?.as === 'anchor') {
+    return (
+      <a className={addClassNames('c-button')} {...props}>
+        <span className='c-button__label'>
+          <span className='c-button__label-text'>{children}</span>
+        </span>
+      </a>
+    )
+  }
+
+  return (
+    <button
+      className={addClassNames('c-button')}
+      onClick={(e) => {
+        e.preventDefault()
+        return props.onClick ? props.onClick(e) : null
+      }}
+      {...props}
+    >
+      <span className='c-button__label'>
+        <span className='c-button__label-text'>{children}</span>
+      </span>
+    </button>
+  )
+}
 
 export { Button }
