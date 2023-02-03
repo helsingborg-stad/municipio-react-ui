@@ -7,7 +7,7 @@ const Timeline = ({
   children,
   ...props
 }: React.ComponentPropsWithoutRef<'div'>): JSX.Element => (
-  <div {...props} className='timeline'>
+  <div {...props} className='timeline timeline--neutral'>
     {children}
   </div>
 )
