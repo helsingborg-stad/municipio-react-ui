@@ -111,3 +111,25 @@
     background-color: #f0eadd;
   }
 }
+
+.timeline--neutral {
+  .timeline__item {
+    .timeline__dot {
+      background-color: initial;
+    }
+
+    .timeline__inner-dot {
+      background-color: var(--color-light, #a3a3a3);
+    }
+
+    .timeline__line {
+      border-color: var(--color-light, #a3a3a3);
+    }
+  }
+
+  .timeline__item.is-active {
+    .timeline__inner-dot {
+      background-color: var(--color-dark, #707070);
+    }
+  }
+}
