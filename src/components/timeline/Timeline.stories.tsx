@@ -1,6 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Button } from '../button/Button'
-import { Icon } from '../icon/Icon'
 import { Typography } from '../typography/Typography'
 
 import {
@@ -15,7 +14,13 @@ import {
 export default {
   title: 'Components/Timeline',
   component: Timeline,
-
+  subcomponents: {
+    TimelineBody,
+    TimelineConnector,
+    TimelineHeader,
+    TimelineItem,
+    TimelineTitle,
+  },
   argTypes: {},
 } as ComponentMeta<typeof Timeline>
 
@@ -102,9 +107,11 @@ const Template2: ComponentStory<typeof Timeline> = (args) => {
               <div className='o-grid u-justify-content--center u-align-items--center'>
                 <div className='o-grid-auto'>
                   <TimelineTitle>{title}</TimelineTitle>
-                  {description ? (
-                    <Typography variant='meta'>{description}</Typography>
-                  ) : null}
+                  {description && (
+                    <div>
+                      <Typography variant='meta'>{description}</Typography>
+                    </div>
+                  )}
 
                   {actions.map(({ text, url }, i) => (
                     <Button

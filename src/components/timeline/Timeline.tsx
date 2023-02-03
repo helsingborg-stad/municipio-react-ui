@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react'
-import { Typography, TypographyProps } from '../typography/Typography'
+import { Typography } from '../typography/Typography'
 import './timeline.scss' // TODO: Move Timeline styles to styleguide
 
 const Timeline = ({
@@ -41,9 +41,10 @@ const TimelineSecondary = ({
 
 const TimelineTitle = ({
   children,
+  variant = 'h4',
   ...props
-}: TypographyProps): JSX.Element => (
-  <Typography className={'timeline__title'} variant='h4' {...props}>
+}: React.ComponentPropsWithoutRef<typeof Typography>): JSX.Element => (
+  <Typography className={'timeline__title'} variant={variant} {...props}>
     {children}
   </Typography>
 )
@@ -66,17 +67,15 @@ const TimelineConnector = ({
   </div>
 )
 
-interface TimelineItemProps extends React.ComponentPropsWithoutRef<'div'> {
-  active?: boolean
-  muted?: boolean
-}
-
 const TimelineItem = ({
   active,
   muted,
   children,
   ...props
-}: TimelineItemProps): JSX.Element => (
+}: React.ComponentPropsWithoutRef<'div'> & {
+  active?: boolean
+  muted?: boolean
+}): JSX.Element => (
   <div
     {...props}
     className={[
