@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add button component: Support for HTMLAnchorElement as root
 - add & setup stylelint configuration for BEM naming convention
 - add CHANGELOG.md
+- add gutterBottom prop to typography component
+
+### Changed
+
+- tsconfig: enabled strict
+- components extend HTML elements using React.ComponentPropsWithoutRef now (fixes type errors when strict is enabled)
 
 ## [0.3.0] - 2022-12-13
 
