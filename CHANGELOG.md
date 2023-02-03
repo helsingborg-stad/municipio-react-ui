@@ -14,11 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add & setup stylelint configuration for BEM naming convention
 - add CHANGELOG.md
 - add gutterBottom prop to typography component
+- add SASS styles for timeline component (will later be moved to styleguide)
 
 ### Changed
 
 - tsconfig: enabled strict
-- components extend HTML elements using React.ComponentPropsWithoutRef now (fixes type errors when strict is enabled)
+- refactor: components extending HTML elements are now using React.ComponentPropsWithoutRef (fixes type errors when strict is enabled)
 
 ## [0.3.0] - 2022-12-13
 
