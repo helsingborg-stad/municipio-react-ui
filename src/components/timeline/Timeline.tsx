@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React from 'react'
 import { Typography, TypographyProps } from '../typography/Typography'
+import './timeline.scss' // TODO: Move Timeline styles to styleguide
 
 const Timeline = ({
   children,

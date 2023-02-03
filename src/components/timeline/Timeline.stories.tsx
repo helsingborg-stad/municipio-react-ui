@@ -11,7 +11,6 @@ import {
   TimelineItem,
   TimelineTitle,
 } from './Timeline'
-import './timeline.scss'
 
 export default {
   title: 'Components/Timeline',
