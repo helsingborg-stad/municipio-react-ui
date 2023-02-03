@@ -42,6 +42,7 @@ export interface TypographyProps
   > {
   variant?: TypographyVariants
   element?: TypographyElements
+  gutterBottom?: boolean | null
 }
 
 const Typography = ({
@@ -49,6 +50,7 @@ const Typography = ({
   element,
   variant = 'p',
   className,
+  gutterBottom,
   ...props
 }: TypographyProps): JSX.Element => {
   const Element = element ?? VariantToElementMap[variant]
@@ -60,6 +62,7 @@ const Typography = ({
         'c-typography',
         `c-typography__variant--${variant}`,
         ...(className ? [className] : []),
+        ...(gutterBottom === false ? ['u-margin__bottom--0'] : []),
       ].join(' ')}
     >
       {children}
