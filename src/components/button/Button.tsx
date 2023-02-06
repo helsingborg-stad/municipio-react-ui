@@ -34,7 +34,7 @@ export type ButtonAsButton = CommonButtonProps &
   }
 export type ButtonAsAnchor = CommonButtonProps &
   React.ComponentPropsWithoutRef<'a'> & {
-    as?: 'anchor'
+    as?: 'a'
     href?: string
   }
 
@@ -61,7 +61,7 @@ const Button: {
       ...overrides,
     ].join(' ')
 
-  if (props?.as === 'anchor' || props?.href) {
+  if (props?.as === 'a' || props?.href) {
     return (
       <a className={addClassNames('c-button')} {...props}>
         <span className='c-button__label'>

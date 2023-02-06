@@ -56,6 +56,6 @@ AsHTMLAnchorElement.args = {
   variant: 'basic',
   children: 'Basic',
   size: 'md',
-  as: 'anchor',
+  as: 'a',
   href: '#',
 }

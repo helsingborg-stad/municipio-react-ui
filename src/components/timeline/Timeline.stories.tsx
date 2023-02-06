@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Button } from '../button/Button'
-import { Typography } from '../typography/Typography'
+import { Text } from '../text/Text'
 
 import {
   Timeline,
@@ -50,8 +50,8 @@ const Template: ComponentStory<typeof Timeline> = (args) => {
           <TimelineConnector />
           <TimelineBody>
             <TimelineHeader>
-              <TimelineTitle>{title}</TimelineTitle>
-              <Typography variant='meta'>{date}</Typography>
+              <TimelineTitle as={'div'}>{title}</TimelineTitle>
+              <Text variant='meta'>{date}</Text>
             </TimelineHeader>
           </TimelineBody>
         </TimelineItem>
@@ -109,14 +109,21 @@ const Template2: ComponentStory<typeof Timeline> = (args) => {
                   <TimelineTitle>{title}</TimelineTitle>
                   {description && (
                     <div>
-                      <Typography variant='meta'>{description}</Typography>
+                      <Text
+                        as='h2'
+                        onClick={(e) => console.log(e)}
+                        variant='meta'
+                        element='h2'
+                      >
+                        {description}
+                      </Text>
                     </div>
                   )}
 
                   {actions.map(({ text, url }, i) => (
                     <Button
                       key={`${text}-${i}`}
-                      as='anchor'
+                      as='a'
                       href={url}
                       variant='basic'
                     >
@@ -125,7 +132,7 @@ const Template2: ComponentStory<typeof Timeline> = (args) => {
                   ))}
                 </div>
                 <div className='o-grid-fit u-align-self--start'>
-                  <Typography variant='meta'>{date}</Typography>
+                  <Text variant='meta'>{date}</Text>
                 </div>
               </div>
             </TimelineHeader>

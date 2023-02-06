@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Button } from '../button/Button'
 import { Icon } from '../icon/Icon'
-import { Typography } from '../typography/Typography'
+import { Text } from '../text/Text'
 
 import {
   Collection,
@@ -39,35 +39,35 @@ export const Multiline: ComponentStory<typeof Collection> = (args) => (
   <Collection {...args}>
     <CollectionItem href='#'>
       <CollectionContent>
-        <Typography variant='h4'>Multiline link</Typography>
-        <Typography>
+        <Text variant='h4'>Multiline link</Text>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.{' '}
-        </Typography>
+        </Text>
       </CollectionContent>
     </CollectionItem>
     <CollectionItem href='#'>
       <CollectionContent>
-        <Typography variant='h4'>Multiline link</Typography>
-        <Typography>
+        <Text variant='h4'>Multiline link</Text>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.{' '}
-        </Typography>
+        </Text>
       </CollectionContent>
     </CollectionItem>
     <CollectionItem>
       <CollectionContent>
-        <Typography variant='h4'>Multiline item</Typography>
-        <Typography>
+        <Text variant='h4'>Multiline item</Text>
+        <Text>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.{' '}
-        </Typography>
+        </Text>
       </CollectionContent>
     </CollectionItem>
   </Collection>
@@ -166,7 +166,7 @@ export const WithSecondary: ComponentStory<typeof Collection> = (args) => (
       </CollectionIcon>
       <CollectionContent>Collection item with plain text</CollectionContent>
       <CollectionSecondary>
-        <Typography variant='meta'>Secondary</Typography>
+        <Text variant='meta'>Secondary</Text>
       </CollectionSecondary>
     </CollectionItem>
   </Collection>
