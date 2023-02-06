@@ -20,6 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - tsconfig: enabled strict
 - refactor: components extending HTML elements are now using React.ComponentPropsWithoutRef (fixes type errors when strict is enabled)
+- refactor: renamed Typography component to Text
+- refactor: set 'element' prop of Text component to deprecated in favour of 'as'
 
 ## [0.3.0] - 2022-12-13
 
