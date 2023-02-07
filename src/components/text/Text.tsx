@@ -38,6 +38,8 @@ export interface TextProps extends React.PropsWithChildren {
   gutterBottom?: boolean | null
   gutterTop?: boolean | null
   className?: string
+  bold?: boolean | null
+  italic?: boolean | null
   /**
    * @deprecated
    * To be removed in future release in favour of 'as' prop.
@@ -55,6 +57,8 @@ export const TextComponent = <
   className,
   gutterTop,
   gutterBottom,
+  bold,
+  italic,
   element,
   ...rest
 }: AsComponentProps<E, TextProps>) => {
@@ -71,6 +75,8 @@ export const TextComponent = <
         'c-typography',
         `c-typography__variant--${variant ?? elementToVariant()}`,
         ...(className ? [className] : []),
+        ...(italic ? ['u-italic'] : []),
+        ...(bold ? ['u-bold'] : []),
         ...(gutterTop === false ? ['u-margin__top--0'] : []),
         ...(gutterBottom === false ? ['u-margin__bottom--0'] : []),
       ].join(' ')}
