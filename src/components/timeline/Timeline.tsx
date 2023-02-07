@@ -41,7 +41,7 @@ const TimelineSecondary = ({
 
 const TimelineTitle = ({
   children,
-  as,
+  as = 'h4',
   variant = 'h4',
   ...props
 }: React.ComponentPropsWithoutRef<typeof Text>): JSX.Element => (
