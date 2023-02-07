@@ -1,4 +1,8 @@
 /** @define timeline **/
+
+$timeline-dot-size: 14px;
+$timeline-connector-width: 32px + $timeline-dot-size;
+
 .timeline {
   position: relative;
 }
@@ -9,16 +13,18 @@
 }
 
 .timeline__title {
-  line-height: 32px;
+  // line-height: 32px;
 }
 
 .timeline__connector {
-  width: 40px;
-  flex-basis: 40px;
-  min-width: 40px;
-  max-width: 40px;
+  // width: 56px;
+  flex-basis: $timeline-connector-width;
+  min-width: $timeline-connector-width;
+
+  // max-width: 56px;
   display: flex;
   position: relative;
+  margin-left: -14px;
 }
 
 .timeline__line {
@@ -34,8 +40,8 @@
 
 .timeline__dot {
   background-color: initial;
-  width: 32px;
-  height: 32px;
+  width: $timeline-connector-width;
+  height: 22px;
   margin: 0 auto;
   border-radius: 100%;
   position: relative;
@@ -66,18 +72,35 @@
 .timeline__body,
 .timeline__secondary {
   background-color: initial;
-  padding-right: 12px;
-  margin-bottom: 24px;
   flex: 1 0;
+  margin-bottom: 24px;
 }
 
 .timeline__connector + .timeline__body {
-  padding-left: 12px;
   padding-right: 0;
 }
 
 .timeline__secondary {
   flex: initial;
+  padding-left: 12px;
+}
+
+.timeline__item--center .timeline__body,
+.timeline__item--center .timeline__secondary,
+.timeline__item--center .timeline__dot,
+.timeline__body--center,
+.timeline__secondary--center,
+.timeline__connector--center .timeline__dot {
+  align-self: center;
+}
+
+.timeline__item--bottom .timeline__body,
+.timeline__item--bottom .timeline__secondary,
+.timeline__item--bottom .timeline__dot,
+.timeline__body--bottom,
+.timeline__secondary--bottom,
+.timeline__connector--bottom .timeline__dot {
+  align-self: flex-end;
 }
 
 .timeline__item > .timeline__body:first-of-type {
@@ -85,12 +108,13 @@
 }
 
 .timeline__item:last-child {
-  .timeline__body {
+  .timeline__body,
+  .timeline__secondary {
     margin-bottom: 0;
   }
 
   .timeline__line {
-    height: 8px;
+    display: none;
   }
 }
 
@@ -105,7 +129,7 @@
 }
 
 .timeline__item.is-muted {
-  color: gray;
+  color: #0000008f;
 
   .timeline__inner-dot {
     background-color: #f0eadd;
