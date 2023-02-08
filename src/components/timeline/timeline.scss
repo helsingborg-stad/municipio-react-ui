@@ -13,15 +13,11 @@ $timeline-connector-width: 32px + $timeline-dot-size;
 }
 
 .timeline__title {
-  // line-height: 32px;
 }
 
 .timeline__connector {
-  // width: 56px;
   flex-basis: $timeline-connector-width;
   min-width: $timeline-connector-width;
-
-  // max-width: 56px;
   display: flex;
   position: relative;
   margin-left: -14px;
