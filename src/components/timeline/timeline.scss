@@ -12,9 +12,6 @@ $timeline-connector-width: 32px + $timeline-dot-size;
   flex-direction: column;
 }
 
-.timeline__title {
-}
-
 .timeline__connector {
   flex-basis: $timeline-connector-width;
   min-width: $timeline-connector-width;
@@ -24,7 +21,7 @@ $timeline-connector-width: 32px + $timeline-dot-size;
 }
 
 .timeline__line {
-  border-right: dotted #f0eadd 2px;
+  border-right: dotted var(--color-light, #a3a3a3) 2px;
   position: absolute;
   top: 12px;
   left: 50%;
@@ -54,15 +51,9 @@ $timeline-connector-width: 32px + $timeline-dot-size;
   width: 14px;
   height: 14px;
   display: block;
-  background-color: #e7b547;
+  background-color: var(--color-dark, #707070);
   z-index: 1;
   border-radius: 100%;
-}
-
-.timeline__item {
-  background-color: initial;
-  position: relative;
-  display: flex;
 }
 
 .timeline__body,
@@ -99,57 +90,37 @@ $timeline-connector-width: 32px + $timeline-dot-size;
   align-self: flex-end;
 }
 
-.timeline__item > .timeline__body:first-of-type {
-  text-align: right;
-}
+.timeline__item {
+  background-color: initial;
+  position: relative;
+  display: flex;
 
-.timeline__item:last-child {
-  .timeline__body,
-  .timeline__secondary {
-    margin-bottom: 0;
-  }
-
-  .timeline__line {
-    display: none;
-  }
-}
-
-.timeline__item.is-active {
-  .timeline__dot {
-    background-color: #f0eadd;
-  }
-
-  .timeline__inner-dot {
-    background-color: #e7b547;
-  }
-}
-
-.timeline__item.is-muted {
-  color: #0000008f;
-
-  .timeline__inner-dot {
-    background-color: #f0eadd;
-  }
-}
-
-.timeline--neutral {
-  .timeline__item {
-    .timeline__dot {
-      background-color: initial;
+  &:last-child {
+    .timeline__body,
+    .timeline__secondary {
+      margin-bottom: 0;
     }
+
+    .timeline__line {
+      display: none;
+    }
+  }
+
+  & > .timeline__body:first-of-type {
+    text-align: right;
+  }
+
+  &.is-muted {
+    color: #0000008f;
 
     .timeline__inner-dot {
       background-color: var(--color-light, #a3a3a3);
     }
-
-    .timeline__line {
-      border-color: var(--color-light, #a3a3a3);
-    }
   }
 
-  .timeline__item.is-active {
+  &.is-active {
     .timeline__inner-dot {
-      background-color: var(--color-dark, #707070);
+      background-color: var(--color-primary, #ae0b05);
     }
   }
 }
