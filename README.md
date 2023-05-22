@@ -64,7 +64,7 @@ const App = () => (
 
 ## 🛠 Development
 
-#### **Clone & run locally**
+### **Clone & run locally**
 
 ```bash
 git clone helsingborg-stad/municipio-react-ui
