@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add CHANGELOG.md
 - add gutterBottom prop to typography component
 - add SASS styles for timeline component (will later be moved to styleguide)
+- add markdownlint configuration in order to make it compatible with prettier
+- add textarea component (copy paste field component), this might merge into field component in the future
 
 ### Changed
 
