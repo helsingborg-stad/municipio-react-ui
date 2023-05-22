@@ -1,9 +1,5 @@
 /* eslint-disable no-undef */
-import React, {
-  ChangeEventHandler,
-  FocusEventHandler,
-  HTMLInputTypeAttribute,
-} from 'react'
+import React, { ChangeEventHandler, FocusEventHandler } from 'react'
 import { Icon } from '../icon/Icon'
 
 export interface SelectProps {

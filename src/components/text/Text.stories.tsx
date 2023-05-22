@@ -1,5 +1,5 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-import { TextComponent, TextProps, TEXT } from './Text'
+import { TextComponent, TEXT } from './Text'
 
 export default {
   title: 'Components/Text',
