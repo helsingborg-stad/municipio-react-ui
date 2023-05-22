@@ -13,10 +13,16 @@ export const Icon = ({
   name,
   size = 'md',
   style,
+  className,
   ...props
 }: Props): JSX.Element => (
   <i
-    className={['c-icon', `c-icon--size-${size}`, 'material-icons'].join(' ')}
+    className={[
+      'c-icon',
+      `c-icon--size-${size}`,
+      'material-icons',
+      ...(className ? [className] : []),
+    ].join(' ')}
     translate='no'
     style={{
       userSelect: 'none',
