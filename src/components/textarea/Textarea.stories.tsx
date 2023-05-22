@@ -17,9 +17,11 @@ const TextareaTemplate: ComponentStory<typeof TextareaComponent> = (args) => (
 
 export const Textarea = TextareaTemplate.bind({})
 Textarea.args = {
-  name: 'text-field',
-  label: 'Text Textarea',
+  name: 'textarea-name',
+  label: 'Textarea label',
   helperText: 'This is a helper text',
+  rows: 4,
+  resizable: false,
   onChange: () => '',
   onBlur: () => '',
   onFocus: () => '',
