@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+-
+
+### Changed
+
+-
+
+## [0.4.0] - 2023-05-22
+
+### Added
+
 - add timeline component
 - add button component: Support for HTMLAnchorElement as root
 - add & setup stylelint configuration for BEM naming convention
@@ -48,6 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add icon component
 - add typography component
 
-[unreleased]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.3.0...HEAD
+[unreleased]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.4.0...HEAD
+[0.4.0]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.3.0...0.4.0
 [0.3.0]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.2.0...0.3.0
 [0.2.0]: https://github.com/helsingborg-stad/municipio-react-ui/compare/a3663b4506a451fad2ca1d42907f1decc4a08a58...0.2.0
