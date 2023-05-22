@@ -21,7 +21,7 @@
     "test-storybook": "test-storybook",
     "deploy-storybook": "gh-pages -d storybook-static"
   },
-  "homepage": "http://helsingborg-stad.github.io/municipio-react-ui",
+  "homepage": "https://helsingborg-stad.github.io/municipio-react-ui",
   "browserslist": [
     "> 1%",
     "not dead"
