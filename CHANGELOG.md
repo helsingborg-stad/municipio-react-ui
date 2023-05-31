@@ -15,6 +15,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
+## [0.5.4] - 2023-05-31
+
+### Added
+
+-
+
+### Changed
+
+-
+
 ## [0.5.3] - 2023-05-23
 
 ### Added
@@ -94,7 +104,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - add icon component
 - add typography component
 
-[unreleased]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.3...HEAD
+[unreleased]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.4...HEAD
+[0.5.4]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.3...0.5.4
 [0.5.3]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.2...0.5.3
 [0.5.2]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.1...0.5.2
 [0.5.1]: https://github.com/helsingborg-stad/municipio-react-ui/compare/0.5.0...0.5.1
