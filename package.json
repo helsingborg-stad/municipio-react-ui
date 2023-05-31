@@ -1,7 +1,7 @@
 {
   "name": "@helsingborg-stad/municipio-react-ui",
   "repository": "helsingborg-stad/municipio-react-ui",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "main": "src/components/index.ts",
   "author": "Nikolas Ramstedt <nikolas.ramstedt@helsingborg.se>",
   "license": "MIT",
