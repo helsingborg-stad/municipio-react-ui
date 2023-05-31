@@ -1,23 +1,23 @@
 {
-  "editor.tabSize": 2,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": [
-    "source.fixAll",
-    "source.codeAction.fixAll"
-  ],
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "stylelint.validate": [
-    "css",
-    "scss"
-  ],
-  "markdownlint.config": {
-    "default": true,
-    "MD033": false,
-    "MD046": false
-  },
-  "files.exclude": {},
-  "workspace.isHidden": true
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": [
+        "source.fixAll",
+        "source.codeAction.fixAll"
+    ],
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+    "stylelint.validate": [
+        "css",
+        "scss"
+    ],
+    "markdownlint.config": {
+        "default": true,
+        "MD033": false,
+        "MD046": false
+    },
+    "files.exclude": {},
+    "workspace.isHidden": true
 }
