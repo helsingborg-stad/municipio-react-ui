@@ -53,7 +53,12 @@ const Textarea = ({
     <div {...props} className={classNames}>
       {label && (
         <label className='c-field__label' htmlFor={name}>
-          {label}
+          {label}{' '}
+          {required ? (
+            <span className='u-color__text--danger' aria-hidden='true'>
+              *
+            </span>
+          ) : null}
         </label>
       )}
       <div className='c-field__inner'>
