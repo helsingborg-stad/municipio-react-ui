@@ -1264,12 +1264,15 @@
     "@hapi/hoek" "^9.0.0"
 
 "@helsingborg-stad/styleguide@^0.11.640":
-  version "0.11.640"
-  resolved "https://npm.pkg.github.com/download/@helsingborg-stad/styleguide/0.11.640/dfedb5d3701c59d2f12e0d40715e429b9cc0c31a"
-  integrity sha512-J2jcwVqpmNUQIehJykv+bhoXO2vtOt3/owrQ8hufTT9Iizn0/uV5WTwOyYrIAn03WmwMD10K1fQQTI3yOJzqrw==
+  version "0.11.971"
+  resolved "https://npm.pkg.github.com/download/@helsingborg-stad/styleguide/0.11.971/01c5272448b5c0d2e2054948de278ae691d19e63#01c5272448b5c0d2e2054948de278ae691d19e63"
+  integrity sha512-1oqAGBTOENEYvfBK0X7BQAOdElV06+R4FSxhheoEBayptCJsDfgdJptZlZVpWyKL19MjBpYL+bvh109AVVl3yQ==
   dependencies:
     "@splidejs/splide" "^3.6.12"
+    "@types/leaflet.markercluster" "^1.5.1"
     hamburgers "^1.1.3"
+    leaflet "^1.9.3"
+    leaflet.markercluster "^1.5.3"
     masonry-layout "^4.2.2"
 
 "@humanwhocodes/config-array@^0.11.6":
@@ -1977,7 +1980,7 @@
 
 "@splidejs/splide@^3.6.12":
   version "3.6.12"
-  resolved "https://registry.npmjs.org/@splidejs/splide/-/splide-3.6.12.tgz"
+  resolved "https://registry.yarnpkg.com/@splidejs/splide/-/splide-3.6.12.tgz#9b6bede5c99140fd06754990c91e474374566c30"
   integrity sha512-ggOUAuSxjWuxxL0IQEZcux26KByfKWfYM2HYmvDBdxkXc5evVW+xuECO+3iuciyrJpgcbYTr4hn0cHfbNlYIeA==
 
 "@storybook/addon-a11y@^6.5.14":
@@ -3198,6 +3201,11 @@
   dependencies:
     fork-ts-checker-webpack-plugin "*"
 
+"@types/geojson@*":
+  version "7946.0.11"
+  resolved "https://registry.yarnpkg.com/@types/geojson/-/geojson-7946.0.11.tgz#012c17cb2256ad8de78560da851ab914a7b9b40e"
+  integrity sha512-L7A0AINMXQpVwxHJ4jxD6/XjZ4NDufaRlUJHjNIFKYUFBH1SvOW+neaqb0VTRSLW5suSrSu19ObFEFnfNcr+qg==
+
 "@types/glob@*":
   version "8.0.0"
   resolved "https://registry.npmjs.org/@types/glob/-/glob-8.0.0.tgz"
@@ -3290,6 +3298,20 @@
   version "7.0.11"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.11.tgz"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
+
+"@types/leaflet.markercluster@^1.5.1":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@types/leaflet.markercluster/-/leaflet.markercluster-1.5.2.tgz#83ad6f35bc144de942bb5dff78f4bbba3d4fc81d"
+  integrity sha512-Yfi5R0Fb0xc/qotTuqJDAX65XKRt6DauzIdsMTcgrrhgf8DpBOrqPV/jw8/zUjY8FetRd6QdnefNdNJKmG/+zA==
+  dependencies:
+    "@types/leaflet" "*"
+
+"@types/leaflet@*":
+  version "1.9.6"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.9.6.tgz#d58ecdbe9f1f383cb0a7133a020cd05bfe00a762"
+  integrity sha512-HakGTK5LBBWegNWsAmTlG55zN1zszYec7aG47/z6SzT90bW2vqjmbqk3YKAbrtveO+G7fSTKTYqVbIwAFnTrbg==
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/lodash@^4.14.167":
   version "4.14.191"
@@ -6099,7 +6121,7 @@ des.js@^1.0.0:
 
 desandro-matches-selector@^2.0.0:
   version "2.0.2"
-  resolved "https://registry.npmjs.org/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz"
+  resolved "https://registry.yarnpkg.com/desandro-matches-selector/-/desandro-matches-selector-2.0.2.tgz#717beed4dc13e7d8f3762f707a6d58a6774218e1"
   integrity sha512-+1q0nXhdzg1IpIJdMKalUwvvskeKnYyEe3shPRwedNcWtnhEKT3ZxvFjzywHDeGcKViIxTCAoOYQWP1qD7VNyg==
 
 destroy@1.2.0:
@@ -6853,7 +6875,7 @@ etag@~1.8.1:
 
 ev-emitter@^1.0.0:
   version "1.1.1"
-  resolved "https://registry.npmjs.org/ev-emitter/-/ev-emitter-1.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/ev-emitter/-/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
   integrity sha512-ipiDYhdQSCZ4hSbX4rMW+XzNKMD1prg/sTvoVmSLkuQ1MVlwjJQQA+sW8tMYR3BLUr9KjodFV4pvzunvRhd33Q==
 
 eventemitter3@^4.0.0:
@@ -7261,7 +7283,7 @@ find-up@^5.0.0:
 
 fizzy-ui-utils@^2.0.0:
   version "2.0.7"
-  resolved "https://registry.npmjs.org/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz"
+  resolved "https://registry.yarnpkg.com/fizzy-ui-utils/-/fizzy-ui-utils-2.0.7.tgz#7df45dcc4eb374a08b65d39bb9a4beedf7330505"
   integrity sha512-CZXDVXQ1If3/r8s0T+v+qVeMshhfcuq0rqIFgJnrtd+Bu8GmDmqMjntjUePypVtjHXKJ6V4sw9zeyox34n9aCg==
   dependencies:
     desandro-matches-selector "^2.0.0"
@@ -7556,7 +7578,7 @@ get-package-type@^0.1.0:
 
 get-size@^2.0.2:
   version "2.0.3"
-  resolved "https://registry.npmjs.org/get-size/-/get-size-2.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/get-size/-/get-size-2.0.3.tgz#54a1d0256b20ea7ac646516756202769941ad2ef"
   integrity sha512-lXNzT/h/dTjTxRbm9BXb+SGxxzkm97h/PCIKtlN/CBCxxmkkIVV21udumMS93MuVTDX583gqc94v3RjuHmI+2Q==
 
 get-stdin@^4.0.1:
@@ -7787,7 +7809,7 @@ gzip-size@^6.0.0:
 
 hamburgers@^1.1.3:
   version "1.2.1"
-  resolved "https://registry.npmjs.org/hamburgers/-/hamburgers-1.2.1.tgz"
+  resolved "https://registry.yarnpkg.com/hamburgers/-/hamburgers-1.2.1.tgz#0649907688335dee3d3d248c4c7ac88351527eb0"
   integrity sha512-uFuVVF7/MeUtRWrA+S1FGGo4iVi7RgPzZAmljBnSeDh4snOZzaQ+oB6CI1m4vKD5RGz9s70ufgiJLxgivqA26Q==
 
 handle-thing@^2.0.0:
@@ -10045,6 +10067,16 @@ lazy-universal-dotenv@^3.0.1:
     dotenv "^8.0.0"
     dotenv-expand "^5.1.0"
 
+leaflet.markercluster@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/leaflet.markercluster/-/leaflet.markercluster-1.5.3.tgz#9cdb52a4eab92671832e1ef9899669e80efc4056"
+  integrity sha512-vPTw/Bndq7eQHjLBVlWpnGeLa3t+3zGiuM7fJwCkiMFq+nmRuG3RI3f7f4N4TDX7T4NpbAXpR2+NTRSEGfCSeA==
+
+leaflet@^1.9.3:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.9.4.tgz#23fae724e282fa25745aff82ca4d394748db7d8d"
+  integrity sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/leven/-/leven-3.1.0.tgz"
@@ -10286,7 +10318,7 @@ markdown-extensions@^1.0.0:
 
 masonry-layout@^4.2.2:
   version "4.2.2"
-  resolved "https://registry.npmjs.org/masonry-layout/-/masonry-layout-4.2.2.tgz"
+  resolved "https://registry.yarnpkg.com/masonry-layout/-/masonry-layout-4.2.2.tgz#d57b44af13e601bfcdc423f1dd8348b5524de348"
   integrity sha512-iGtAlrpHNyxaR19CvKC3npnEcAwszXoyJiI8ARV2ePi7fmYhIud25MHK8Zx4P0LCC4d3TNO9+rFa1KoK1OEOaA==
   dependencies:
     get-size "^2.0.2"
@@ -11518,7 +11550,7 @@ os-homedir@^1.0.0, os-homedir@^1.0.1:
 
 outlayer@^2.1.0:
   version "2.1.1"
-  resolved "https://registry.npmjs.org/outlayer/-/outlayer-2.1.1.tgz"
+  resolved "https://registry.yarnpkg.com/outlayer/-/outlayer-2.1.1.tgz#29863b6de10ea5dadfffcadfa0d728907387e9a2"
   integrity sha512-+GplXsCQ3VrbGujAeHEzP9SXsBmJxzn/YdDSQZL0xqBmAWBmortu2Y9Gwdp9J0bgDQ8/YNIPMoBM13nTwZfAhw==
   dependencies:
     ev-emitter "^1.0.0"
