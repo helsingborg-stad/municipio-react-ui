@@ -1,0 +1,19 @@
+.c-native-select {
+  select {
+    text-indent: 1px;
+    text-overflow: '';
+    width: 100%;
+    appearance: none;
+    flex: 1;
+    border: 0;
+    background: none;
+    height: var(--c-field-height, calc(var(--base, 8px) * 6));
+    padding: var(--c-field-padding, calc(var(--base, 8px) * 2));
+    outline: 0;
+    margin: 0;
+  }
+
+  .c-icon {
+    padding: calc(var(--base, 8px) * 1.5);
+  }
+}

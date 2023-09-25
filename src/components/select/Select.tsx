@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React, { ChangeEventHandler, FocusEventHandler } from 'react'
 import { Icon } from '../icon/Icon'
+import './select.scss'
 
 export interface SelectProps {
   name: string
@@ -38,8 +39,7 @@ const Select = ({
 }: SelectProps): JSX.Element => {
   const classNames = [
     'c-field',
-    'c-select',
-    'c-select--md',
+    'c-native-select',
     ...(error ? ['is-invalid'] : []),
     ...(valid ? ['is-valid'] : []),
     ...(readOnly ? ['c-field--readonly'] : []),
