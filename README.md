@@ -24,7 +24,7 @@ Include the latest [styleguide](https://github.com/helsingborg-stad/styleguide) 
   rel="stylesheet"
   id="styleguide-css"
   type="text/css"
-  href="http://v2.styleguide.helsingborg.se/assets/dist/css/styleguide-css.min.css"
+  href="https://styleguide.getmunicipio.com/assets/dist/css/styleguide-css.min.css"
   media="all"
 />
 
